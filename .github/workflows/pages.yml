@@ -1,0 +1,68 @@
+name: Build and Deploy Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  workflow_run:
+    workflows: [Update GitHub Activity]
+    types: [completed]
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: >-
+      github.event_name != 'workflow_run' ||
+      (github.event.workflow_run.conclusion == 'success' &&
+       github.event.workflow_run.head_repository.full_name == github.repository)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Checkout latest main, including the activity commit
+        uses: actions/checkout@v6
+        with:
+          ref: main
+      - name: Validate source
+        run: python3 scripts/validate_site.py
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v5
+      - name: Build the README include with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+          baseurl: ${{ steps.pages.outputs.base_path }}
+      - name: Validate generated homepage
+        run: python3 scripts/validate_site.py --built _site/index.html
+      - name: Upload validated site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+      - name: Record deployed source
+        run: |
+          echo '### Pages build' >> "$GITHUB_STEP_SUMMARY"
+          echo "Source commit: $(git rev-parse HEAD)" >> "$GITHUB_STEP_SUMMARY"
+
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+

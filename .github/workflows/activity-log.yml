@@ -39,6 +39,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
           EVENT_LIMIT: '8'
           OUTPUT_STYLE: MARKDOWN
+          EVENT_TEMPLATE: "{action} {subject} {ref} {number} {verb} [{repo}]({url})"
           README_PATH: README.md
           HIDE_DETAILS_ON_PRIVATE_REPOS: 'true'
           COMMIT_MESSAGE: 'docs: update GitHub activity'

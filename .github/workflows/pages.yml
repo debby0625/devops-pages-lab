@@ -39,7 +39,6 @@ jobs:
         with:
           source: ./
           destination: ./_site
-          baseurl: ${{ steps.pages.outputs.base_path }}
       - name: Validate generated homepage
         run: python3 scripts/validate_site.py --built _site/index.html
       - name: Upload validated site

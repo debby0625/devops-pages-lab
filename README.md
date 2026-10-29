@@ -11,14 +11,14 @@ The homepage includes this README, so the repository and website share one sourc
 ## Latest activity
 
 <!--START_SECTION:activity-->
-1. 📝 Committed to assignment5-automated-testing in [debby0625/deployment-pipeline-devops](https://github.com/debby0625/deployment-pipeline-devops/commit/574a44cdd6f8fb9230509ca110b474871e9c0917)
-2. 🎉 Created a new branch assignment5-automated-testing in [debby0625/deployment-pipeline-devops](https://github.com/debby0625/deployment-pipeline-devops/tree/assignment5-automated-testing)
-3. 📝 Committed to main in [debby0625/deployment-pipeline-devops](https://github.com/debby0625/deployment-pipeline-devops/commit/358d6195e5e591defe1d1e78ac10036b0c6507f8)
-4. 📝 Committed to assignment5-automated-testing in [debby0625/deployment-pipeline-devops](https://github.com/debby0625/deployment-pipeline-devops/commit/6fa28b367340e048bdad251f50fd8cde2829d1b5)
-5. 📝 Committed to assignment5-automated-testing in [debby0625/deployment-pipeline-devops](https://github.com/debby0625/deployment-pipeline-devops/commit/d72d4f7dcde1982b2d524c6097bba699939b8a9b)
-6. 🔀 Merged PR #7 in [debby0625/deployment-pipeline-devops](https://github.com/debby0625/deployment-pipeline-devops/pull/7)
-7. 📝 Committed to assignment5-automated-testing in [debby0625/deployment-pipeline-devops](https://github.com/debby0625/deployment-pipeline-devops/commit/5b49e22a81eb3900f10c23e82b0c62315dc748ef)
-8. 📥 Opened PR #7 in [debby0625/deployment-pipeline-devops](https://github.com/debby0625/deployment-pipeline-devops/pull/7)
+1. Committed to assignment5-automated-testing in [debby0625/deployment-pipeline-devops](https://github.com/debby0625/deployment-pipeline-devops/commit/574a44cdd6f8fb9230509ca110b474871e9c0917)
+2. Created a new branch assignment5-automated-testing in [debby0625/deployment-pipeline-devops](https://github.com/debby0625/deployment-pipeline-devops/tree/assignment5-automated-testing)
+3. Committed to main in [debby0625/deployment-pipeline-devops](https://github.com/debby0625/deployment-pipeline-devops/commit/358d6195e5e591defe1d1e78ac10036b0c6507f8)
+4. Committed to assignment5-automated-testing in [debby0625/deployment-pipeline-devops](https://github.com/debby0625/deployment-pipeline-devops/commit/6fa28b367340e048bdad251f50fd8cde2829d1b5)
+5. Committed to assignment5-automated-testing in [debby0625/deployment-pipeline-devops](https://github.com/debby0625/deployment-pipeline-devops/commit/d72d4f7dcde1982b2d524c6097bba699939b8a9b)
+6. Merged PR #7 in [debby0625/deployment-pipeline-devops](https://github.com/debby0625/deployment-pipeline-devops/pull/7)
+7. Committed to assignment5-automated-testing in [debby0625/deployment-pipeline-devops](https://github.com/debby0625/deployment-pipeline-devops/commit/5b49e22a81eb3900f10c23e82b0c62315dc748ef)
+8. Opened PR #7 in [debby0625/deployment-pipeline-devops](https://github.com/debby0625/deployment-pipeline-devops/pull/7)
 <!--END_SECTION:activity-->
 
 ## How publishing works

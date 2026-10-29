@@ -1,0 +1,19 @@
+name: Validate Source and Failure Guards
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+      - name: Validate source and exercise expected failures
+        run: python3 scripts/test_validation.py

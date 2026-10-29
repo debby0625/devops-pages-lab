@@ -1,0 +1,55 @@
+name: Update GitHub Activity
+
+on:
+  schedule:
+    - cron: '17 0,6,12 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: activity-log
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v6
+        with:
+          ref: main
+      - name: Validate source
+        run: python3 scripts/validate_site.py
+      - name: Check activity token
+        env:
+          ACTIVITY_TOKEN: ${{ secrets.TOKEN }}
+        run: |
+          if [ -z "$ACTIVITY_TOKEN" ]; then
+            echo "::error::Create the repository Actions secret named TOKEN before running this workflow."
+            exit 1
+          fi
+      - name: Update README from GitHub activity
+        uses: TheDanniCraft/activity-log@130ff6ba97c30b2d272f27851db0a347b29472af # v1, audited 2026-10-29
+        with:
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          EVENT_LIMIT: '8'
+          OUTPUT_STYLE: MARKDOWN
+          README_PATH: README.md
+          HIDE_DETAILS_ON_PRIVATE_REPOS: 'true'
+          COMMIT_MESSAGE: 'docs: update GitHub activity'
+      - name: Refresh checkout after the API commit
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+      - name: Verify activity was generated
+        run: python3 scripts/validate_site.py --require-activity
+      - name: Record updated commit
+        run: |
+          echo '### Activity update' >> "$GITHUB_STEP_SUMMARY"
+          echo "README commit: https://github.com/${{ github.repository }}/commit/$(git rev-parse HEAD)" >> "$GITHUB_STEP_SUMMARY"
+          echo 'A successful run triggers the separate Build and Deploy Pages workflow.' >> "$GITHUB_STEP_SUMMARY"
+

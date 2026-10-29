@@ -2,6 +2,7 @@ name: Update GitHub Activity
 
 on:
   schedule:
+    - cron: '*/5 * * * *' # Temporary scheduler verification; removed after evidence capture.
     - cron: '17 0,6,12 * * *'
   workflow_dispatch:
 

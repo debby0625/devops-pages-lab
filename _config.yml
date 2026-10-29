@@ -1,0 +1,13 @@
+title: DevOps Activity Journal
+description: GitHub Pages and an automated GitHub activity journal.
+lang: en
+markdown: kramdown
+exclude:
+  - SETUP.md
+  - scripts
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .gitignore
+  - .github
+

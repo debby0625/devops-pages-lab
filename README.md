@@ -11,14 +11,14 @@ The homepage includes this README, so the repository and website share one sourc
 ## Latest activity
 
 <!--START_SECTION:activity-->
-1. Committed to main in [debby0625/devops-pages-lab](https://github.com/debby0625/devops-pages-lab/commit/8dd34ee5dd22b8234a9aafc29622fe4d51854505)
-2. Committed to main in [debby0625/devops-pages-lab](https://github.com/debby0625/devops-pages-lab/commit/93222c0c6e9a3917a06d61c4d688584594e92491)
-3. Committed to assignment5-automated-testing in [debby0625/deployment-pipeline-devops](https://github.com/debby0625/deployment-pipeline-devops/commit/574a44cdd6f8fb9230509ca110b474871e9c0917)
-4. Created a new branch assignment5-automated-testing in [debby0625/deployment-pipeline-devops](https://github.com/debby0625/deployment-pipeline-devops/tree/assignment5-automated-testing)
-5. Committed to main in [debby0625/deployment-pipeline-devops](https://github.com/debby0625/deployment-pipeline-devops/commit/358d6195e5e591defe1d1e78ac10036b0c6507f8)
-6. Committed to assignment5-automated-testing in [debby0625/deployment-pipeline-devops](https://github.com/debby0625/deployment-pipeline-devops/commit/6fa28b367340e048bdad251f50fd8cde2829d1b5)
-7. Committed to assignment5-automated-testing in [debby0625/deployment-pipeline-devops](https://github.com/debby0625/deployment-pipeline-devops/commit/d72d4f7dcde1982b2d524c6097bba699939b8a9b)
-8. Merged PR #7 in [debby0625/deployment-pipeline-devops](https://github.com/debby0625/deployment-pipeline-devops/pull/7)
+1. Committed to main in [debby0625/devops-pages-lab](https://github.com/debby0625/devops-pages-lab/commit/72bf6e3b6c5b3a7a03465261c99532d4dbcfe730)
+2. Committed to main in [debby0625/devops-pages-lab](https://github.com/debby0625/devops-pages-lab/commit/437c77699e81ed82c5bdf546e55e1dd1698505fa)
+3. Committed to main in [debby0625/devops-pages-lab](https://github.com/debby0625/devops-pages-lab/commit/576dff9f045bfe6613c66599d9a86c7525f65398)
+4. Committed to main in [debby0625/devops-pages-lab](https://github.com/debby0625/devops-pages-lab/commit/1f5ebf6a240bdfb9b0306722a5c3c65cf9dd3218)
+5. Committed to main in [debby0625/devops-pages-lab](https://github.com/debby0625/devops-pages-lab/commit/8dd34ee5dd22b8234a9aafc29622fe4d51854505)
+6. Committed to main in [debby0625/devops-pages-lab](https://github.com/debby0625/devops-pages-lab/commit/93222c0c6e9a3917a06d61c4d688584594e92491)
+7. Committed to assignment5-automated-testing in [debby0625/deployment-pipeline-devops](https://github.com/debby0625/deployment-pipeline-devops/commit/574a44cdd6f8fb9230509ca110b474871e9c0917)
+8. Created a new branch assignment5-automated-testing in [debby0625/deployment-pipeline-devops](https://github.com/debby0625/deployment-pipeline-devops/tree/assignment5-automated-testing)
 <!--END_SECTION:activity-->
 
 ## How publishing works

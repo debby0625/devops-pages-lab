@@ -48,6 +48,8 @@ jobs:
       - name: Deliberately break built homepage for release safety demo
         if: github.event_name == 'workflow_dispatch' && inputs.demo_failure
         run: |
+          # Jekyll's container creates this disposable output as root.
+          sudo chown "$(id -u):$(id -g)" _site/index.html
           python3 - <<'PY'
           from pathlib import Path
           path = Path('_site/index.html')

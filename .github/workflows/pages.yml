@@ -4,6 +4,12 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+    inputs:
+      demo_failure:
+        description: "Release safety demo: remove activity heading from built HTML"
+        type: boolean
+        required: false
+        default: false
   workflow_run:
     workflows: [Update GitHub Activity]
     types: [completed]
@@ -39,6 +45,19 @@ jobs:
         with:
           source: ./
           destination: ./_site
+      - name: Deliberately break built homepage for release safety demo
+        if: github.event_name == 'workflow_dispatch' && inputs.demo_failure
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          path = Path('_site/index.html')
+          html = path.read_text(encoding='utf-8')
+          assert 'Latest activity' in html, 'Expected heading before failure injection'
+          path.write_text(html.replace('Latest activity', 'DELIBERATE RELEASE SAFETY FAILURE'), encoding='utf-8')
+          print('DEMO: removed Latest activity from built HTML; source files are unchanged.')
+          PY
+          echo '### Deliberate release safety failure' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Removed Latest activity from the runner-built HTML. The normal validation gate must reject it before artifact upload or deployment.' >> "$GITHUB_STEP_SUMMARY"
       - name: Validate generated homepage
         run: python3 scripts/validate_site.py --built _site/index.html
       - name: Upload validated site
@@ -64,4 +83,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-

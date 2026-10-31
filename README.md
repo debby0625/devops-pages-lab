@@ -11,14 +11,14 @@ The homepage includes this README, so the repository and website share one sourc
 ## Latest activity
 
 <!--START_SECTION:activity-->
-1. Committed to main in [debby0625/devops-pages-lab](https://github.com/debby0625/devops-pages-lab/commit/72bf6e3b6c5b3a7a03465261c99532d4dbcfe730)
-2. Committed to main in [debby0625/devops-pages-lab](https://github.com/debby0625/devops-pages-lab/commit/437c77699e81ed82c5bdf546e55e1dd1698505fa)
-3. Committed to main in [debby0625/devops-pages-lab](https://github.com/debby0625/devops-pages-lab/commit/576dff9f045bfe6613c66599d9a86c7525f65398)
-4. Committed to main in [debby0625/devops-pages-lab](https://github.com/debby0625/devops-pages-lab/commit/1f5ebf6a240bdfb9b0306722a5c3c65cf9dd3218)
-5. Committed to main in [debby0625/devops-pages-lab](https://github.com/debby0625/devops-pages-lab/commit/8dd34ee5dd22b8234a9aafc29622fe4d51854505)
-6. Committed to main in [debby0625/devops-pages-lab](https://github.com/debby0625/devops-pages-lab/commit/93222c0c6e9a3917a06d61c4d688584594e92491)
-7. Committed to assignment5-automated-testing in [debby0625/deployment-pipeline-devops](https://github.com/debby0625/deployment-pipeline-devops/commit/574a44cdd6f8fb9230509ca110b474871e9c0917)
-8. Created a new branch assignment5-automated-testing in [debby0625/deployment-pipeline-devops](https://github.com/debby0625/deployment-pipeline-devops/tree/assignment5-automated-testing)
+1. Committed to main in [debby0625/devops-pages-lab](https://github.com/debby0625/devops-pages-lab/commit/90776371e8341e49610f46a678ef0f3ffaea9340)
+2. Committed to main in [debby0625/devops-pages-lab](https://github.com/debby0625/devops-pages-lab/commit/3308d1c6d09030e50921cf507f1384a72ed05982)
+3. Committed to main in [debby0625/devops-pages-lab](https://github.com/debby0625/devops-pages-lab/commit/72bf6e3b6c5b3a7a03465261c99532d4dbcfe730)
+4. Committed to main in [debby0625/devops-pages-lab](https://github.com/debby0625/devops-pages-lab/commit/437c77699e81ed82c5bdf546e55e1dd1698505fa)
+5. Committed to main in [debby0625/devops-pages-lab](https://github.com/debby0625/devops-pages-lab/commit/576dff9f045bfe6613c66599d9a86c7525f65398)
+6. Committed to main in [debby0625/devops-pages-lab](https://github.com/debby0625/devops-pages-lab/commit/1f5ebf6a240bdfb9b0306722a5c3c65cf9dd3218)
+7. Committed to main in [debby0625/devops-pages-lab](https://github.com/debby0625/devops-pages-lab/commit/8dd34ee5dd22b8234a9aafc29622fe4d51854505)
+8. Committed to main in [debby0625/devops-pages-lab](https://github.com/debby0625/devops-pages-lab/commit/93222c0c6e9a3917a06d61c4d688584594e92491)
 <!--END_SECTION:activity-->
 
 ## How publishing works
